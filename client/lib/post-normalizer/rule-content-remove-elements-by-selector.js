@@ -24,6 +24,11 @@ const thingsToRemove = [
 	'select',
 	'button',
 	'textarea',
+	// Atavist fixes as we are using A FBIA feed for now
+	'figure.op-interactive iframe',
+	'figure.op-tracker iframe',
+	'time.op-published',
+	'time.op-modified',
 ].join( ', ' ); // make them all into one big selector
 
 function removeElement( element ) {
